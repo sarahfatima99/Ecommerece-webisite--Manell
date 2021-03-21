@@ -18,8 +18,8 @@ An ecommerce platform for people which will help them to buy and sell their prod
 ### Front End Technology: 
 . Html, Css, Javascript 
 
-#File Structure:
-##Manell:
+# File Structure:
+## Manell:
 .SQl file consisting of Databse tables and records
 
 ## App:
