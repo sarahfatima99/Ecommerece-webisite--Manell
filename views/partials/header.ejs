@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title>shop page</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@5.2.3/dist/css/ionicons.min.cs" rel="stylesheet">
+    <link rel="stylesheet" href="/public/assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"> </script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+</head>
+<body style="background: papayawhip"> 
+    
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+        <img src="/public/Images/logo.png" width="125px">
+        </div>
+        <div class="top-nav-bar">
+    <!-- <div class="search-box">
+        <input type=text class="form-control">
+        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></span></i></div>
+    </div> -->
+         
+        <nav>
+
+        <ul>
+          <li> <a href="/home">Home</a></li>
+          
+       
+       
+
+          <div class="dropdown">
+            <a href="" class="dropbtn">View Products</a>
+         
+        
+            <div class="dropdown-content">
+              <a href="/viewproduct/food">Food</a>
+              <a href="/viewproduct/wearables">Clothing</a>
+              <a href="/viewproduct/art">Art and Craft</a>
+            </div>
+
+            <%if(currentUser!="Account" && currentUser!=null){%>
+        
+              <li>  <a href="/product">Add product</a>  </li>  
+              <li><a href="/shop"><%=shop%></a> </li>
+            
+              <li>  <a href="/hist">Order History</a>  </li>  
+    
+            <%}%>
+
+          
+          <li><a href="/logout"><%=currentUser%></a></li> 
+        
+       
+        
+          
+
+            
+          </div>
+             
+       
+          
+          
+            <li class="cart">
+            <a href="/cart"><i class="fa fa-shopping-basket"></i>cart            </a>
+          </li>
+          
+            </ul>
+        </nav>
+      
+        </div>
+        </div>

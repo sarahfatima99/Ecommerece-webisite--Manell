@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title>Account | login/signup</title>
+    <link rel="stylesheet" href="program.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"> </script>
+    </head>
+<body style="background: papayawhip"> 
+    
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+        <img src="Images/logo.png" width="125px">
+        </div>
+        <div class="top-nav-bar">
+    <div class="search-box">
+        
+        <input type=text class="form-control">
+        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></span></i></div>
+    </div>
+         
+        <nav>
+        <ul>
+            <a href="afterlogin.html">Home</a>
+                
+                <div class="dropdown">
+                    <a href="" class="dropbtn">Products</a>
+                        
+                    <div class="dropdown-content">
+                      <a href="food1.html">Food</a>
+                      <a href="clothing1.html">Clothing</a>
+                      <a href="art1.html">Art and Craft</a>
+                    </div>
+                  </div>
+              
+                  <li><a href="addproducts.html">Add Products</a></li>
+            
+            <li><a href="acc1.html">Account</a></li>
+            <li class="cart">
+                <a href="cart1.html"><i class="fa fa-shopping-basket"></i>cart<span>0</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+        
+        
+        </div>
+       
+        
+       
+    </div>    
+    <div class="login-page">
+    <div class="form">
+        <form class="signup-form">
+        <input type="text" placeholder="User Name">
+        <input type="password" placeholder="Password">
+            <input type="email" placeholder="User email">
+            <input type="phone" placeholder="Phone">
+            <p><font color="FFFFFF"><h6 style="text-align: left">City:</h6></font></p>
+            <h5 style="text-align: left">
+            <select name="Select">
+            <option value="Select"> Select</option>
+            <option value="Karachi"> Karachi</option>
+                <option value="Lahore"> Lahore</option>
+                <option value="Islamabad"> Islamabad</option>
+            </select>
+            </h5>
+            
+            
+            <p><font color="FFFFFF"><h6 style="text-align: left">Country:</h6></font></p>
+            <h5 style="text-align: left">
+            <select name="Select">
+            <option value="Select"> Select</option>
+            <option value="Pakistan"> Pakistan</option>
+                <option value="India"> India</option>
+                <option value="UK"> UK</option>
+            </select>
+            </h5>
+            <br>
+            
+<a href="acc.html"><button type="button">Sign Up</button></a>
+            <p class="message">Already Registered? <a href="#">Login</a></p>
+        </form>
+         
+   <form class="login-form-form">
+        <input type="text" placeholder="User Name">
+        <input type="password" placeholder="Password">
+        <a href="afterlogin.html"><button type="button">Login</button></a>
+            <p class="message">Not Registered? <a href="#">Register</a></p>
+        </form>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script>
+    $('.message a').click(function(){
+        $('form').animate({height:"toggle",opacity:"toggle"}, "slow");                
+        });
+    </script>
+     <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

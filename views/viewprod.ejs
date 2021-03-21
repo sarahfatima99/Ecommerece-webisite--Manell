@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%> 
+
+       
+
+
+<div class="containerclothing" >
+    <%for(i=0;i<product.length;i++){%>
+    <div class="clothing" id='<%=product[i].pid%>'>
+   
+
+          
+        <img src="/public/uploaded_images/<%= product[i].img %>" alt="product1"> 
+        <h3><%=product[i].name%></h3>
+        <h3>Rs <span><%=product[i].price%></span></h3>
+        
+        <a  tag="art4" onclick="loadDoc('<%=product[i].pid%>')" class="add-cart cart1" >Add to cart</a>
+    </div>
+        
+        <%}%>
+
+        
+   
+    </div>
+       
+       
+       
+
+        <%- include("partials/footer"); -%> 

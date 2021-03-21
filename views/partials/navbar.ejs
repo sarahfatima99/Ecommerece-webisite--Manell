@@ -1,0 +1,76 @@
+<div class="navbar">
+    <div class="logo">
+    <img src="/public/Images/logo.png" width="125px">
+    </div>
+    <div class="top-nav-bar">
+
+    <nav>
+
+    <ul>
+      <li> <a href="/home">Home</a></li>
+             
+      <li><a href="/shop"><%=shop%></a> </li>
+      
+      
+      <li><a href="/logout"><%=currentUser%></a></li> 
+    
+    <%if(currentUser!="Account"){%>
+    
+      <li>  <a href="/product" class="dropbtn">Add product</a>  </li>  
+
+    <%}%>
+    
+      
+      <div class="dropdown">
+        <a  class="dropbtn">View Products</a>
+     
+    
+        <div class="dropdown-content">
+          <a href="/viewproduct/food">Food</a>
+          <a href="/viewproduct/wearables">Clothing</a>
+          <a href="/viewproduct/art">Art and Craft</a>
+        </div>
+
+        
+      </div>
+         
+   
+      
+      
+        <li class="cart">
+        <a href="/cart"><i class="fa fa-shopping-basket"></i>cart            </a>
+      </li>
+      
+        </ul>
+    </nav>
+  
+    </div>
+
+        
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand " href="">
+            <img src="Images/logo.png" width="125px"  class="d-inline-block align-top" alt="">
+            
+          </a>      
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+          </div>

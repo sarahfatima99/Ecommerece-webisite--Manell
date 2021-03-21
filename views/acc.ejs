@@ -1,0 +1,49 @@
+<%- include("partials/header"); -%> 
+
+
+    <div class="login-page">
+    <div class="form">
+        
+        <form  action="/acc" method="POST">
+            
+            <input type="text" placeholder="Enter Full Name" name="name" required>
+            <input type="email" placeholder="User email" name="email">
+            <input type="phone" placeholder="Phone" name="phone">
+  
+            <input type="password" placeholder="Enter password" name="pass" required>
+        
+            
+            <p><font color="FFFFFF"><h6 style="text-align: left">Country:</h6></font></p>
+            <h5 style="text-align: left">
+            <select name="country">
+            <option value="Select"> Select</option>
+            <option value="Pakistan"> Pakistan</option>
+                <option value="India"> India</option>
+                <option value="UK"> UK</option>
+            </select>
+            </h5>
+            <h5 style="text-align: left">
+                <p><a href="" font color="FFFFFF"><h6 style="text-align: left">City:</h6></a></p>
+         
+                <select name="city">
+                <option value="Select"> Select</option>
+            
+                <option value="Karachi"> Karachi</option>
+                    <option value="Lahore"> Lahore</option>
+                    <option value="Islamabad"> Islamabad</option>
+                </select>
+                <br>
+                </h5>
+                
+                
+            <br>
+            
+<button type="submit">Sign Up</button></a>
+</form>
+            <p class="message">Already Registered? <a href="/login">Login</a></p>
+     
+
+    </div>
+    </div>
+
+    <%- include("partials/footer"); -%> 

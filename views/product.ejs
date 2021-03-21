@@ -1,0 +1,66 @@
+
+<%- include("partials/header"); -%> 
+          
+
+<div class="seller-page">
+  <div class="form1">
+      <form class="seller-form" action="/product" method="POST" enctype="multipart/form-data">
+      
+        <p><h4 style="text-align: center;">Product Name:</h4><input type="text" name="productname" ></p>
+        <p><h4 style="text-align: center;">Product Type:</h4></p>
+        <h4 style="text-align: right;">
+          <select name="category">
+        <option value="Select"> Select</option>
+        <option value="Food"> Food</option>
+            <option value="Wearables"> Wearables</option>
+            <option value="art"> Art</option>
+            
+        </select>
+        <p><h4 style="text-align: center;">Product Quantity:</h4><input type="text"></p>
+        </h4>
+        <p><h4  style="text-align: center;">Product Price:</h4><input type="text" name="price" placeholder="Enter in rupees"></p>
+        </h4>
+        <h4 style="text-align: center;">Give details</h4>
+        <textarea name="desc" rows="5" cols="33">
+        </textarea>
+        <h4 style="text-align: center;">Select an image</h4>
+          <input type="file"
+           name="photo">
+        
+          <br>
+          <h4 style="text-align: right"><a href="home"><button type="button">Return to home pade</button></a></h4>
+          <h4 style="text-align: right"><button type="submit">Submit and add more products</button></h4>
+        
+      </form>
+      </div>
+     
+      </div>
+
+
+<%- include("partials/footer"); -%> 
+
+
+<!-- 
+<form  action="/product" method="POST" enctype="multipart/form-data"> 
+  <p><h5>Product Name:</h5><input type="text" name="productname" ></p>
+  <p><h5>Product Type:</h5></p>
+
+  <select name="category">
+  <option value="Select"> Select</option>
+  <option value="Food"> Food</option>
+      <option value="Wearables"> Wearables</option>
+      <option value="Art"> Art</option>
+      
+  </select>
+  <p><h5>Product Quantity:</h5><input type="text"></p>
+  </h5>
+  <p><h5>Product Price:</h5><input type="text" name="price"></p>
+  <textarea name="desc" rows="5" cols="33">
+  </textarea>
+
+  <h5>Select an image</h5>
+  <input name="photo" type="file"  >
+    <br>
+   <button type="submit">Submit</button>
+  
+</form> -->
