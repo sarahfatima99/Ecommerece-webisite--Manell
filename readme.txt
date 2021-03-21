@@ -1,7 +1,34 @@
-The website functions in the following sequence:
-- Opens signup page
-- after signing in, you get redirected to login page
-- After login access, you are taken to shop registering process in following sequence:
+# Ecommerece-webisite--Manell
+An ecommerce platform for people which will help them to buy and sell their products. 
 
-1. Enter shop name
-2. Enter product name, details, price, image and quantity.
+## Features:
+- Home Page
+- Login/Signup
+- Shop Registeration
+- Categories Selection
+- Cart
+- Checkout
+- View Order history
+
+## Tools and Technology:
+### Backend Technology: 
+- Database: MySql, MySql Workbenck
+-  NodeJs, express, EJS
+
+### Front End Technology: 
+. Html, Css, Javascript 
+
+# File Structure:
+## Manell:
+.SQl file consisting of Databse tables and records
+
+## App:
+Driver program of .JS file
+
+## Views:
+Consist of frontend pages and partials 
+
+## Project1:
+Static view of website
+
+
